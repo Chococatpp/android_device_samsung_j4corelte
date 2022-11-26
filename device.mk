@@ -17,6 +17,7 @@ OVERLAY_DEVICE := jprime
 
 # Inherit from msm8917-common
 $(call inherit-product, device/samsung/msm8917-common/msm8917.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Camera
 PRODUCT_COPY_FILES += \
