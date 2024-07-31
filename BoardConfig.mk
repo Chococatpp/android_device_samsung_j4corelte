@@ -13,16 +13,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/samsung/j4primelte
+DEVICE_PATH := device/samsung/j4corelte
 
 # Kernel
-TARGET_KERNEL_CONFIG := j4primelte_defconfig
+TARGET_KERNEL_CONFIG := j4corelte_defconfig
 
 # Filesystem
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2453520000
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1644167168
+BOARD_VENDORIMAGE_PARTITION_SIZE := 260046848
 
 # Inherit from common msm8917-common
 -include device/samsung/msm8917-common/BoardConfigCommon.mk
 
 # Inherit from the proprietary version
--include vendor/samsung/j4primelte/BoardConfigVendor.mk
+-include vendor/samsung/j4corelte/BoardConfigVendor.mk
