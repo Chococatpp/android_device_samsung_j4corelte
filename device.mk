@@ -17,16 +17,17 @@ OVERLAY_DEVICE := jprime
 
 # Inherit from msm8917-common
 $(call inherit-product, device/samsung/msm8917-common/msm8917.mk)
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # Camera
+# There shouldn't be need to change this but i leave a comment here if it cause issues later
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/camera/s5k3l6xx_chromatix_j4primelte.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3l6xx_chromatix_j4primelte.xml \
     $(LOCAL_PATH)/camera/sdm450_camera_j4primelte.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdm450_camera_j4primelte.xml
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
-    device/samsung/j4primelte
+    device/samsung/j4corelte
 
 # Inherit vendor
-$(call inherit-product, vendor/samsung/j4primelte/j4primelte-vendor.mk)
+$(call inherit-product, vendor/samsung/j4corelte/j4corelte-vendor.mk)
