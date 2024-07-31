@@ -26,15 +26,15 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 PRODUCT_BRAND := samsung
-PRODUCT_DEVICE := j4primelte
+PRODUCT_DEVICE := j4corelte
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_NAME := lineage_j4primelte
-PRODUCT_MODEL := Galaxy J4+
+PRODUCT_NAME := lineage_j4corelte
+PRODUCT_MODEL := Galaxy J4 Core
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 TARGET_VENDOR := samsung
-TARGET_VENDOR_PRODUCT_NAME := j4primelte
-PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="j4primeltedx-user 9 PPR1.180610.011 J415FXXU2BSDM release-keys"
+TARGET_VENDOR_PRODUCT_NAME := j4corelte
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="j4corelteub-user 8.1.0 M1AJB J410GUBS1ATL1 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "samsung/j4primeltedx/j4primelte:9/PPR1.180610.011/J415FXXU2BSDM:user/release-keys"
+BUILD_FINGERPRINT := samsung/j4corelteub/j4corelte:8.1.0/M1AJB/J410GUBS1ATL1:user/release-keys
